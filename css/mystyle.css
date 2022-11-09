@@ -1,0 +1,82 @@
+body {
+  height: 5000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.outer {
+  height: 550px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.outer i {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 2em;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.outer i[class*="left"] {
+  left: 5%;
+}
+.outer i[class*="right"] {
+  right: 5%;
+}
+.outer i:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.lenta {
+  width: 6300px;
+  height: 100%;
+  position: relative;
+  left: 0;
+  transition: all 1s linear;
+}
+.lenta .inner {
+  width: 880px;
+  margin-right: 20px;
+}
+.lenta .inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navs ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navs ul span {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid #555;
+  background-color: rgba(215, 213, 213, 0.5);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.navs li.active span {
+  background-color: rgba(105, 104, 104, 0.5);
+}
